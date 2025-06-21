@@ -1,0 +1,52 @@
+Relatório de Verificação MC/DC
+==============================
+
+Decisão: if ano < 1 or ano > 9999
+Condições: ano < 1, ano > 9999
+
+Casos Observados (únicos):
+--------------------
+ano < 1=True | ano > 9999=False | Resultado: True
+ano < 1=False | ano > 9999=True | Resultado: True
+ano < 1=False | ano > 9999=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+==============================
+
+Decisão: if ano <= 1752
+Condições: ano <= 1752
+
+Casos Observados (únicos):
+--------------------
+ano <= 1752=True | Resultado: True
+ano <= 1752=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+==============================
+
+Decisão: if ano % 400 == 0
+Condições: ano % 400 == 0
+
+Casos Observados (únicos):
+--------------------
+ano % 400 == 0=True | Resultado: True
+ano % 400 == 0=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+==============================
+
+Decisão: if ano % 100 == 0
+Condições: ano % 100 == 0
+
+Casos Observados (únicos):
+--------------------
+ano % 100 == 0=True | Resultado: True
+ano % 100 == 0=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+==============================
+

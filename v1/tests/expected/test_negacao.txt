@@ -1,0 +1,13 @@
+Relatório de Testes MC/DC
+==============================
+
+Decisão: if not (x > 5 and y < 10)
+Condições: x > 5, y < 10
+
+Casos de Teste MC/DC:
+--------------------
+Teste 1: x > 5=False | y < 10=True  | Resultado: True
+Teste 2: x > 5=True  | y < 10=False | Resultado: True
+Teste 3: x > 5=True  | y < 10=True  | Resultado: False
+
+==============================

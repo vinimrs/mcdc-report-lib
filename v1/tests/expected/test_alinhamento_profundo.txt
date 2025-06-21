@@ -1,0 +1,17 @@
+Relatório de Testes MC/DC
+==============================
+
+Decisão: if a and (b or (c and d)) or e
+Condições: a, b, c, d, e
+
+Casos de Teste MC/DC:
+--------------------
+Teste 1: a=False | b=True  | c=True  | d=True  | e=False | Resultado: False
+Teste 2: a=True  | b=False | c=False | d=True  | e=False | Resultado: False
+Teste 3: a=True  | b=False | c=True  | d=False | e=False | Resultado: False
+Teste 4: a=True  | b=False | c=True  | d=False | e=True  | Resultado: True
+Teste 5: a=True  | b=False | c=True  | d=True  | e=False | Resultado: True
+Teste 6: a=True  | b=True  | c=True  | d=False | e=False | Resultado: True
+Teste 7: a=True  | b=True  | c=True  | d=True  | e=False | Resultado: True
+
+==============================
