@@ -1,52 +1,106 @@
-Relatório de Verificação MC/DC
+    Relatório de Verificação MC/DC
 ==============================
 
-Decisão: if ano < 1 or ano > 9999
-Condições: ano < 1, ano > 9999
+Decisão: if i == 9
+Condições: i == 9
 
 Casos Observados (únicos):
 --------------------
-ano < 1=True | ano > 9999=False | Resultado: True
-ano < 1=False | ano > 9999=True | Resultado: True
-ano < 1=False | ano > 9999=False | Resultado: False
+i == 9=False | Resultado: False
+i == 9=True | Resultado: True
 
 MC/DC Coverage: PASS
+
 
 ==============================
 
-Decisão: if ano <= 1752
-Condições: ano <= 1752
+Decisão: if posicao < 1 or posicao > self.POSICOES
+Condições: posicao < 1, posicao > self.POSICOES
 
 Casos Observados (únicos):
 --------------------
-ano <= 1752=True | Resultado: True
-ano <= 1752=False | Resultado: False
+posicao < 1=False | posicao > self.POSICOES=False | Resultado: False
 
-MC/DC Coverage: PASS
+MC/DC Coverage: FAIL (faltam: posicao < 1, posicao > self.POSICOES)
+
 
 ==============================
 
-Decisão: if ano % 400 == 0
-Condições: ano % 400 == 0
+Decisão: if posicao in range(1, 7)
+Condições: posicao in range(1, 7)
 
 Casos Observados (únicos):
 --------------------
-ano % 400 == 0=True | Resultado: True
-ano % 400 == 0=False | Resultado: False
+posicao in range(1, 7)=True | Resultado: True
+posicao in range(1, 7)=False | Resultado: False
 
 MC/DC Coverage: PASS
+
 
 ==============================
 
-Decisão: if ano % 100 == 0
-Condições: ano % 100 == 0
+Decisão: if k != None
+Condições: k != None
 
 Casos Observados (únicos):
 --------------------
-ano % 100 == 0=True | Resultado: True
-ano % 100 == 0=False | Resultado: False
+k != None=True | Resultado: True
+k != None=False | Resultado: False
 
 MC/DC Coverage: PASS
+
+
+==============================
+
+Decisão: if posicao == 7
+Condições: posicao == 7
+
+Casos Observados (únicos):
+--------------------
+posicao == 7=True | Resultado: True
+posicao == 7=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+
+==============================
+
+Decisão: if i == n
+Condições: i == n
+
+Casos Observados (únicos):
+--------------------
+i == n=False | Resultado: False
+i == n=True | Resultado: True
+
+MC/DC Coverage: PASS
+
+
+==============================
+
+Decisão: if posicao == 8
+Condições: posicao == 8
+
+Casos Observados (únicos):
+--------------------
+posicao == 8=True | Resultado: True
+posicao == 8=False | Resultado: False
+
+MC/DC Coverage: PASS
+
+
+==============================
+
+Decisão: if posicao == 9
+Condições: posicao == 9
+
+Casos Observados (únicos):
+--------------------
+posicao == 9=True | Resultado: True
+posicao == 9=False | Resultado: False
+
+MC/DC Coverage: PASS
+
 
 ==============================
 
