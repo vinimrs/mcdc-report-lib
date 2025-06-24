@@ -1,5 +1,5 @@
 import pytest
-from programa import eh_bissexto  # ajuste para o nome correto do módulo
+from eh_bissexto import eh_bissexto  # ajuste para o nome correto do módulo
 
 @pytest.mark.parametrize("ano, expected_exception, expected_result", [
     # anos inválidos geram ValueError
