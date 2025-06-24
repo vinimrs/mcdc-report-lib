@@ -12,6 +12,7 @@ ano < 1=False | ano > 9999=False | Resultado: False
 
 MC/DC Coverage: PASS
 
+
 ==============================
 
 Decisão: if ano <= 1752
@@ -23,6 +24,7 @@ ano <= 1752=True | Resultado: True
 ano <= 1752=False | Resultado: False
 
 MC/DC Coverage: PASS
+
 
 ==============================
 
@@ -36,6 +38,7 @@ ano % 400 == 0=False | Resultado: False
 
 MC/DC Coverage: PASS
 
+
 ==============================
 
 Decisão: if ano % 100 == 0
@@ -47,6 +50,7 @@ ano % 100 == 0=True | Resultado: True
 ano % 100 == 0=False | Resultado: False
 
 MC/DC Coverage: PASS
+
 
 ==============================
 
